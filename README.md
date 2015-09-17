@@ -8,7 +8,7 @@ Custom [Homebrew](https://github.com/Homebrew/homebrew) formulas
 
 ```shell
 $ brew tap jrnewell/tap
-$ brew install node
+$ brew install jrnewell/tap/node
 ```
 
 ## License

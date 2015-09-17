@@ -1,2 +1,9 @@
-# homebrew-tap
-Custom HomeBrew Formulas
+# Homebrew Tap
+
+Custom [Homebrew](https://github.com/Homebrew/homebrew) formulas
+
+- 4.x node.js without npm
+
+## License
+
+[MIT License](http://en.wikipedia.org/wiki/MIT_License)

@@ -1,4 +1,4 @@
-class Node < Formula
+class NodeLts < Formula
   desc "Platform built on Chrome's JavaScript runtime to build network applications"
   homepage "https://nodejs.org/"
   url "https://nodejs.org/dist/v4.2.2/node-v4.2.2.tar.gz"

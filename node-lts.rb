@@ -1,8 +1,8 @@
 class NodeLts < Formula
   desc "Platform built on Chrome's JavaScript runtime to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v4.2.2/node-v4.2.2.tar.gz"
-  sha256 "00e709353435b436b5bbf5e62272ebb15fe801065422c4c2afe2b93456210cb1"
+  url "https://nodejs.org/dist/v4.2.3/node-v4.2.3.tar.gz"
+  sha256 "5008ade5feb4b089f59163f66bffddc113f27de5d78edf203e39435c2c5d554f"
 
   option "with-debug", "Build with debugger hooks"
   option "with-icu4c", "Build with Intl (icu4c) support"

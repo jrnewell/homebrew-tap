@@ -1,8 +1,8 @@
 class Node < Formula
   desc "Platform built on Chrome's JavaScript runtime to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v5.4.1/node-v5.4.1.tar.gz"
-  sha256 "78455ef2e3dea06b7d13d393c36711009048a91e5de5892523ec4a9be5a55e0c"
+  url "https://nodejs.org/dist/v5.5.0/node-v5.5.0.tar.gz"
+  sha256 "d69b18cc20699a35434858fb853997616762280610a510ec4b4ff1a94798b432"
 
   option "with-debug", "Build with debugger hooks"
   option "with-icu4c", "Build with Intl (icu4c) support"

@@ -19,6 +19,8 @@ class Node < Formula
   deprecated_option "with-icu4c" => "with-full-icu"
 
   depends_on :python => :build if MacOS.version <= :snow_leopard
+  depends_on "pkg-config" => :build
+  depends_on "openssl" => :optional
 
   # Per upstream - "Need g++ 4.8 or clang++ 3.4".
   fails_with :clang if MacOS.version <= :snow_leopard
@@ -37,6 +39,8 @@ class Node < Formula
   end
 
   def install
+    # Never install the bundled "npm", always prefer our
+    # installation from tarball for better packaging control.
     args = %W[--prefix=#{prefix} --without-npm]
     args << "--debug" if build.with? "debug"
     args << "--shared-openssl" if build.with? "openssl"
@@ -52,9 +56,12 @@ class Node < Formula
   end
 
   def caveats
-    s = <<-EOS.undent
+    s = ""
+
+    s += <<-EOS.undent
       Homebrew did NOT install npm.  Please install and configure npm manually.
     EOS
+
     if build.without? "full-icu"
       s += <<-EOS.undent
         Please note by default only English locale support is provided. If you need
@@ -72,8 +79,13 @@ class Node < Formula
     path = testpath/"test.js"
     path.write "console.log('hello');"
 
-    output = `#{bin}/node #{path}`.strip
+    output = shell_output("#{bin}/node #{path}").strip
     assert_equal "hello", output
-    assert_equal 0, $?.exitstatus
+    output = shell_output("#{bin}/node -e 'console.log(new Intl.NumberFormat(\"en-EN\").format(1234.56))'").strip
+    assert_equal "1,234.56", output
+    if build.with? "full-icu"
+      output = shell_output("#{bin}/node -e 'console.log(new Intl.NumberFormat(\"de-DE\").format(1234.56))'").strip
+      assert_equal "1.234,56", output
+    end
   end
 end

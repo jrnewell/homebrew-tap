@@ -56,6 +56,12 @@ class Node < Formula
     system "make", "install"
   end
 
+  def post_install
+    rm_rf "#{prefix}/etc"
+    rm_rf "#{etc}/bash_completion.d/npm"
+    rm_rf "#{prefix}/libexec"
+  end
+
   def caveats
     s = ""
 

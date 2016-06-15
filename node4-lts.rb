@@ -6,6 +6,7 @@ class Node4Lts < Formula
   head "https://github.com/nodejs/node.git", :branch => "v4.x-staging"
 
   bottle do
+    root_url "https://homebrew.bintray.com/bottles-versions"
     sha256 "34641761e3c1936b3735303d949dc136e36dcb7d56ed1a51483b60310350e82c" => :el_capitan
     sha256 "b9040a1b3557edcb7aec331a2484e5ddafb6e38f714cf2c90e1c73cd6551d2d1" => :yosemite
     sha256 "a4412918ffc4214d9f7c211ea84869c0ef56e7a3857efcf5226d688fba80a13e" => :mavericks

@@ -1,15 +1,15 @@
 class Node4Lts < Formula
   desc "JavaScript runtime built on Chrome's V8 engine"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v4.4.6/node-v4.4.6.tar.xz"
-  sha256 "0f6bbfbea525469c91932b1aac35e0810e6bcda96f1c720e42a433942ee66106"
+  url "https://nodejs.org/dist/v4.4.7/node-v4.4.7.tar.xz"
+  sha256 "1ef900b9cb3ffb617c433a3247a9d67ff36c9455cbc9c34175bee24bdbfdf731"
   head "https://github.com/nodejs/node.git", :branch => "v4.x-staging"
 
   bottle do
     root_url "https://homebrew.bintray.com/bottles-versions"
-    sha256 "e553c34ecfba8fe340d03f010978d01eabdf8084b1b25c63b9162f73daebd8fa" => :el_capitan
-    sha256 "3ee21e7dd84e3388a3455ed37ab3dd70d2cabdae35166157b6fbbdb4f94c4173" => :yosemite
-    sha256 "2ba2f0f9e60c6076cbe8e7afe9f18da018616fb6f503daba1f3e860e7fc4e6b7" => :mavericks
+    sha256 "e55b810c3f0be1c3f8f1a014462b23d3088301bb54832ca1bb1e1b3c634c583f" => :el_capitan
+    sha256 "d3600f7c983a5f4fae53b535db390366604428f9a7022ad2862581d324ceaedb" => :yosemite
+    sha256 "b6f03de06a244668dec0001598771f97e266bcfb1cf1607068f43a4715935fa3" => :mavericks
   end
 
   option "with-debug", "Build with debugger hooks"

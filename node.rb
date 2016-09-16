@@ -1,15 +1,15 @@
 class Node < Formula
   desc "Platform built on the V8 JavaScript runtime to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v6.5.0/node-v6.5.0.tar.xz"
-  sha256 "ddf2056a9164c723db707b6c016f9e617f17166298dc88c5a7cb1d7d5ddb1290"
+  url "https://nodejs.org/dist/v6.6.0/node-v6.6.0.tar.xz"
+  sha256 "640485d2b672d3313203eae164576539e61f1e55d68122ff2c7fb59896e21a33"
   head "https://github.com/nodejs/node.git"
 
   bottle do
     root_url "https://homebrew.bintray.com/bottles"
-    sha256 "db1da1b3b61d17ad56becb0ec252438dbbce376b9ee5e1137da75d8a986e9db7" => :el_capitan
-    sha256 "627d2cef13d34548d945d908c75d96ee1e6cd537fe5c526df1c807d0f36e675b" => :yosemite
-    sha256 "7bd58ce346e530b65cd2759b3cfdc126bcbf90dff1cf38357aaef8e5029edfa0" => :mavericks
+    sha256 "3e76b955ccdf7c92b283bc6fa6305346a1ace4882afc62367e7e549360878704" => :el_capitan
+    sha256 "ed5735b7ae82b3ecd4cdc212fa97d2cbc8c94d9010301b557d2b65f0978c911b" => :yosemite
+    sha256 "772c2dd7143c3f871e8e1d4819e75aff6de5415228444ed5515ab0d98090ef2c" => :mavericks
   end
 
   option "with-debug", "Build with debugger hooks"

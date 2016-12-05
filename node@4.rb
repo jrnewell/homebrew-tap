@@ -7,9 +7,9 @@ class NodeAT4 < Formula
 
   bottle do
     root_url "https://homebrew.bintray.com/bottles"
-    sha256 "d4cd023a34e85d68c749ea485280188a6914efb17a9ca3d5052bba0ab5c80c60" => :sierra
-    sha256 "d044f9cdc3228d35520efdab173cfddfb0178152b84bbc7118bf71d6c04018f2" => :el_capitan
-    sha256 "b36fe475ed2a518646723a821518eb893af1069cef8eef3adf38e15d0b0c4b8a" => :yosemite
+    sha256 "28cb3a996025e7911e0abfac3e055c88fe3c719fc6aca8f161ba64169ce1b1ce" => :sierra
+    sha256 "82c042780f0e176dade96212c71816993d8476c6a97ac45135c45f0894b4c026" => :el_capitan
+    sha256 "c43180c308bbfb69b8383c0519024298555ddc836148615bb65d5165140a6036" => :yosemite
   end
 
   option "with-debug", "Build with debugger hooks"

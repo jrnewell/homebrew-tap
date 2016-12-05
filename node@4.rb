@@ -21,10 +21,6 @@ class NodeAT4 < Formula
 
   conflicts_with "node", :because => "Differing versions of the same formula"
 
-  fails_with :llvm do
-    build 2326
-  end
-
   resource "icu4c" do
     url "https://ssl.icu-project.org/files/icu4c/56.1/icu4c-56_1-src.tgz"
     version "56.1"

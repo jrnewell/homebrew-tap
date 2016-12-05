@@ -1,5 +1,5 @@
 class Node < Formula
-  desc "Platform built on the V8 JavaScript runtime to build network applications"
+  desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
   url "https://nodejs.org/dist/v7.2.0/node-v7.2.0.tar.xz"
   sha256 "486d4db7ef659521ad2fafefca877638da07bef61e2aee090207ff52149294fb"
@@ -23,9 +23,10 @@ class Node < Formula
   depends_on "pkg-config" => :build
   depends_on "openssl" => :optional
 
+  conflicts_with "node@4", :because => "Differing versions of the same formulae."
+
   # Per upstream - "Need g++ 4.8 or clang++ 3.4".
   fails_with :clang if MacOS.version <= :snow_leopard
-  fails_with :llvm
   fails_with :gcc_4_0
   fails_with :gcc
   ("4.3".."4.7").each do |n|
@@ -33,10 +34,10 @@ class Node < Formula
   end
 
   resource "icu4c" do
-    url "https://ssl.icu-project.org/files/icu4c/57.1/icu4c-57_1-src.tgz"
-    mirror "https://fossies.org/linux/misc/icu4c-57_1-src.tgz"
-    version "57.1"
-    sha256 "ff8c67cb65949b1e7808f2359f2b80f722697048e90e7cfc382ec1fe229e9581"
+    url "https://ssl.icu-project.org/files/icu4c/58.1/icu4c-58_1-src.tgz"
+    mirror "https://nuxi.nl/distfiles/third_party/icu4c-58_1-src.tgz"
+    version "58.1"
+    sha256 "0eb46ba3746a9c2092c8ad347a29b1a1b4941144772d13a88667a7b11ea30309"
   end
 
   def install

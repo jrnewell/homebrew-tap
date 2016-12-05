@@ -1,12 +1,12 @@
-class Node4Lts < Formula
-  desc "JavaScript runtime built on Chrome's V8 engine"
+class NodeAT4 < Formula
+  desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
   url "https://nodejs.org/dist/v4.6.2/node-v4.6.2.tar.xz"
   sha256 "859458b337686556c1f9e195062abc6c394210c2280ee47ed1ddc725b2982c9e"
   head "https://github.com/nodejs/node.git", :branch => "v4.x-staging"
 
   bottle do
-    root_url "https://homebrew.bintray.com/bottles-versions"
+    root_url "https://homebrew.bintray.com/bottles"
     sha256 "d4cd023a34e85d68c749ea485280188a6914efb17a9ca3d5052bba0ab5c80c60" => :sierra
     sha256 "d044f9cdc3228d35520efdab173cfddfb0178152b84bbc7118bf71d6c04018f2" => :el_capitan
     sha256 "b36fe475ed2a518646723a821518eb893af1069cef8eef3adf38e15d0b0c4b8a" => :yosemite

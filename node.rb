@@ -14,13 +14,12 @@ class Node < Formula
 
   option "with-debug", "Build with debugger hooks"
   option "with-openssl", "Build against Homebrew's OpenSSL instead of the bundled OpenSSL"
-  option "with-full-icu", "Build with full-icu (all locales) instead of small-icu (English only)"
 
   deprecated_option "enable-debug" => "with-debug"
-  deprecated_option "with-icu4c" => "with-full-icu"
 
   depends_on :python => :build if MacOS.version <= :snow_leopard
   depends_on "pkg-config" => :build
+  depends_on "icu4c" => :recommended
   depends_on "openssl" => :optional
 
   conflicts_with "node@4", :because => "Differing versions of the same formulae."

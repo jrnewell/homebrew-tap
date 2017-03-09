@@ -1,15 +1,15 @@
 class Node < Formula
   desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v7.7.1/node-v7.7.1.tar.xz"
-  sha256 "965fc82aa767223be574e41d7f78ec4bd2ab3da619cef1256e46c30d053b7611"
+  url "https://nodejs.org/dist/v7.7.2/node-v7.7.2.tar.xz"
+  sha256 "e7448d8e44d32c2c63347c822508cf5c87b9662c07db290056fec66d37c4f584"
   head "https://github.com/nodejs/node.git"
 
   bottle do
     root_url "https://homebrew.bintray.com/bottles"
-    sha256 "99458fb39a994527a59b9dae4cc1d6e71c298dba0f0a2002c77813b4ca4a332a" => :sierra
-    sha256 "9a99bab55d2318331e92138e6ecef498ef0d01e2cac1e3c86d923bec2dea27bb" => :el_capitan
-    sha256 "0260ed4345dd7c8e3e2681e36877509011c0962159881624b6a0b5f5dea2bf7a" => :yosemite
+    sha256 "47b89f9c5130edb6610ab8ee83c0a966f6fc6e0f012529fa611d5be0a430e306" => :sierra
+    sha256 "526e69310612c80ebbd86368fe8dbc281d52e1e02dd225d5cf5789f4d6b951c1" => :el_capitan
+    sha256 "5d6e244f57d562a05c29cf65264b741c455ff9e2c68ae3c471fb89d1931779ee" => :yosemite
   end
 
   option "with-debug", "Build with debugger hooks"

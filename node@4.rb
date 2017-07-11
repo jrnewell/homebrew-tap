@@ -1,15 +1,15 @@
 class NodeAT4 < Formula
   desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v4.8.2/node-v4.8.2.tar.xz"
-  sha256 "b961350b8490c791bdd3663925662ba0fbe01e004b43f1c2779baffcc816b930"
+  url "https://nodejs.org/dist/v4.8.4/node-v4.8.4.tar.xz"
+  sha256 "35fe633a48cbe93c79327161d9dc964ac9810f4ceb2ed8628487e6e14a15905b"
   head "https://github.com/nodejs/node.git", :branch => "v4.x-staging"
 
   bottle do
     root_url "https://homebrew.bintray.com/bottles"
-    sha256 "80d39c9b8459b5ddf40049b23a8eb1c53a9e6b7f39092dd56fbf0e36c12b9c08" => :sierra
-    sha256 "d0da6b9665978a2cce3b5355a2b079738bc9716fe5d02cd22169fe53b7d6e364" => :el_capitan
-    sha256 "2da3fe902a8daff3e6e01b0e09e3ae5ab30b819f940244318d57ca4e896528ed" => :yosemite
+    sha256 "2b4cef121443ec8c835035676fc7ccebcbfd16139f9da2816a9e6b2a4b63a035" => :sierra
+    sha256 "5126bf15b688e3d3725b132ed5fb249be7867270b8da3c613ae16ed8e3c129d6" => :el_capitan
+    sha256 "1033c78acfb7134b6991d73d2e844242909f0939ea6a7e4ef1ebfec0bcc94513" => :yosemite
   end
 
   option "with-debug", "Build with debugger hooks"

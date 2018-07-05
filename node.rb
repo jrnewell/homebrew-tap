@@ -1,15 +1,15 @@
 class Node < Formula
   desc "Platform built on V8 to build network applications"
   homepage "https://nodejs.org/"
-  url "https://nodejs.org/dist/v10.5.0/node-v10.5.0.tar.xz"
-  sha256 "7b54c543745b0df9ee159571fe989d5bbea58a903c51f7d5ccba4105336b33bc"
+  url "https://nodejs.org/dist/v10.6.0/node-v10.6.0.tar.xz"
+  sha256 "1960742a836db36ad1aaf3cc024e79aa067adb8460f981c7ae8409390afc7e8f"
   head "https://github.com/nodejs/node.git"
 
   bottle do
     root_url "https://homebrew.bintray.com/bottles"
-    sha256 "6baa1521807f16f6a1a69b746c47def6b05adca93db24be1a9a33d084e4d89ff" => :high_sierra
-    sha256 "ee065d27b365acaef7a29df3a9b6517a03cbe8c4a0fd7f5e13a22e8f2e8c454f" => :sierra
-    sha256 "64ac98882ffd1c675c4e18df991c247375e3e485911ebdd52b656183ea70e759" => :el_capitan
+    sha256 "da81d3d696b639ffe8a42673c1e01b8f1ce4e37ddc6458fa490e254ebe256c73" => :high_sierra
+    sha256 "dbd8155f4c0fcc32b236381982eaddd0fe7f77290101099c824bd4b18ea13cb3" => :sierra
+    sha256 "0d2de2e28947288300fe443604d5f31b8648e16d55104ef728ed558958f35627" => :el_capitan
   end
 
   option "with-debug", "Build with debugger hooks"

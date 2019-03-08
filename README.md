@@ -2,13 +2,13 @@
 
 Custom [Homebrew](https://github.com/Homebrew/homebrew) formulas
 
-- 4.x node.js without npm
+- broot
 
 ## Usage
 
 ```shell
 $ brew tap jrnewell/tap
-$ brew install jrnewell/tap/node
+$ brew install jrnewell/tap/broot
 ```
 
 ## License

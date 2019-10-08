@@ -1,8 +1,8 @@
 class Broot < Formula
   desc "An interactive tree view, a fuzzy search, a balanced BFS descent and customizable commands"
   homepage "https://github.com/Canop/broot/"
-  url "https://github.com/Canop/broot/archive/v0.7.5.tar.gz"
-  sha256 "65635be08f3959747f830ada0891cbb800353e8268e2260ea783ad519113a57e"
+  url "https://github.com/Canop/broot/archive/v0.9.6.tar.gz"
+  sha256 "af8b36d5d4242ec1bd86925f0f664a610e7e94309686ef0874df6bc0867a0c3e"
   head "https://github.com/Canop/broot.git"
 
   depends_on "rust" => :build

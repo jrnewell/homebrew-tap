@@ -2,13 +2,13 @@
 
 Custom [Homebrew](https://github.com/Homebrew/homebrew) formulas
 
-- broot
+- maven (no openjdk dependency)
 
 ## Usage
 
 ```shell
 $ brew tap jrnewell/tap
-$ brew install jrnewell/tap/broot
+$ brew install jrnewell/tap/maven
 ```
 
 ## License
